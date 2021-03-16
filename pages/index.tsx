@@ -16,7 +16,7 @@ export default function Home() {
     const handlePlayVideo = e => {
         console.log(videoPlayer.current.seekTo(Number(inputData.value)));
     }
-    const handleInputChange = e => setInputData(() => ({[e.target.name]: e.target.value}))
+    const handleInputChange = e => setInputData(({[e.target.name]: e.target.value}))
     return (
         <>
             <Typography variant="h1">ASMR</Typography>
