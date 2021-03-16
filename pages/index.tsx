@@ -5,7 +5,7 @@ import {Typography, Button, Input, InputLabel} from "@material-ui/core";
 
 
 export default function Home() {
-    const [inputData, setInputData] = useState({value: ""});
+    const [inputData, setInputData] = useState<any>({value: ""});
     const videoPlayer = React.createRef<ReactPlayer>();
     const [videoURL, setVideoURL] = useState();
     useEffect(() => {
