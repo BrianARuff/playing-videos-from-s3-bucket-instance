@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {useEffect, useState} from "react";
 import ReactPlayer from "react-player";
+import {Typography} from "@material-ui/core";
 
 
 export default function Home() {
@@ -11,11 +12,11 @@ export default function Home() {
         })
     }, [])
     return (
-        <div>
-            <h1>ASMR</h1>
-            <h4>Car  Wash</h4>
+        <>
+           <Typography variant="h1">ASMR</Typography>
+            <Typography variant="h4">Car Wash</Typography>
             <ReactPlayer url={videoURL} controls autoPlay/>
 
-        </div>
+        </>
     )
 }
